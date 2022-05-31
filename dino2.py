@@ -1,6 +1,6 @@
-import pyautogui # pip install pyautogui
-from PIL import Image, ImageGrab # pip install pillow
-# from numpy import asarray
+import pyautogui 
+from PIL import Image, ImageGrab
+
 import time
 def iscollide(data):
     for i in range(270, 300):
@@ -19,9 +19,6 @@ if __name__ == "__main__":
 
     print("Hey.. Dino game about to start in 3 seconds")
     time.sleep(2)
-    #image = ImageGrab.grab().convert('L')
-    #data = image.load()
-    #hit('h') 
     while True:
         image = ImageGrab.grab() 
         data = image.load()
